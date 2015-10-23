@@ -1,0 +1,15 @@
+<div>
+    <ul class="list-group" ng-repeat="person in ctrl.users" ng-show="$index == detailId">
+        <li class="list-group-item">Gender: {{person.gender}}</li>
+        <li class="list-group-item">First name: {{person.first}}</li>
+        <li class="list-group-item">Last name: {{person.last}}</li>
+        <li class="list-group-item">Street: {{person.street}}</li>
+        <li class="list-group-item">City {{person.city}}</li>
+        <li class="list-group-item">Zip {{person.zip}}</li>
+        <li class="list-group-item">Phone {{person.phone}}</li>
+        <li class="list-group-item">Cell {{person.cell}}</li>
+        <li class="list-group-item">Email {{person.email}}</li>
+        <li class="list-group-item"><img src="{{person.picture.large}}"/></li>
+    </ul>
+    <a href="#/all">Go back</a>
+</div>
